@@ -6,14 +6,16 @@
 # вычислите рентабельность выручки (соотношение прибыли к выручке).
 # Далее запросите численность сотрудников фирмы и определитеприбыль
 # прибыль фирмы в расчете на одного сотрудника.
-revenue = int(input("Введите выручку фирмы: "));
-costs = int(input("Введите издержки фирмы: "));
-profit = revenue - costs;
+revenue = int(input("Введите выручку фирмы: "))
+costs = int(input("Введите издержки фирмы: "))
+profit = revenue - costs
 if profit > 0:
-    workers = int(input("Введите численность сотрудников фирмы: "));
-    profitability = profit/revenue;
-    profit_per_worker = profit/workers;
-    print(f"Финансовый результат - прибыль. Ее величина: {profit}");
-    print(f"Прибыль фирмы в расчете на одного сотрудника = {profit_per_worker}");
+    workers = int(input("Введите численность сотрудников фирмы: "))
+    profitability = profit/revenue
+    profit_per_worker = profit/workers
+    print(f"Финансовый результат - прибыль. Ее величина: {profit}")
+    print(f"Прибыль фирмы в расчете на одного сотрудника = {profit_per_worker}")
+elif profit == 0:
+    print("Финансовый результат - выручка равна издержкам")
 else:
-    print(f"Финансовый результат - убыток. Его величина: {profit}");
+    print(f"Финансовый результат - убыток. Его величина: {profit}")
