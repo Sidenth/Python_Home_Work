@@ -10,13 +10,13 @@
 N = int(input("Введите количество элементов массива: "))
 X = int(input('Введите число X: '))
 new_list = []
-for i in range(1, N+1):
+for i in range(1, N + 1):
     new_list.append(i)
-    i+=1
+    i += 1
 print(new_list)
 count = 0
 for i in range(len(new_list)):
     if X == new_list[i]:
-        count+=1
-    i+=1
+        count += 1
+    i += 1
 print(f'Число {X} встречаестся - {count} раз')

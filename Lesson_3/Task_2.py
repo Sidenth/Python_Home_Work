@@ -14,7 +14,7 @@
 
 first_number = int(input('Введите первое число: '))
 second_number = int(input('Введите второе число: '))
-if second_number!=0:
-    print(first_number/second_number)
+if second_number != 0:
+    print(first_number / second_number)
 else:
     print('Вы что? Пытаетесь делить на 0!')

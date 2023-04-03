@@ -11,7 +11,8 @@
 # *Пример:*
 # ноутбук
 #     12
-eng_dict = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+eng_dict = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+            'V', 'W', 'X', 'Y', 'Z']
 
 one_point_eng = ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R']
 two_point_eng = ['D', 'G']
@@ -21,7 +22,8 @@ five_point_eng = ['K']
 eight_point_eng = ['J', 'X']
 ten_point_eng = ['Q', 'Z']
 
-rus_dict = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С',' Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я']
+rus_dict = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', ' Т', 'У',
+            'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я']
 
 one_point_rus = ['А', 'В', 'Е', 'И', 'Н', 'О', 'Р', 'С', 'Т']
 two_point_rus = ['Д', 'К', 'Л', 'М', 'П', 'У']
@@ -37,40 +39,40 @@ for i in word:
     word_list.append(i)
 count = 0
 if i in eng_dict:
-	for i in range(len(word_list)):
-		if word_list[i] in one_point_eng:
-			count+=1
-		if word_list[i] in two_point_eng:
-			count+=2
-		if word_list[i] in three_point_eng:
-			count+=3
-		if word_list[i] in four_point_eng:
-			count+=4
-		if word_list[i] in five_point_eng:
-			count+=5
-		if word_list[i] in eight_point_eng:
-			count+=8
-		if word_list[i] in ten_point_eng:
-			count+=10
-		i+=1
-	print(count)
+    for i in range(len(word_list)):
+        if word_list[i] in one_point_eng:
+            count += 1
+        if word_list[i] in two_point_eng:
+            count += 2
+        if word_list[i] in three_point_eng:
+            count += 3
+        if word_list[i] in four_point_eng:
+            count += 4
+        if word_list[i] in five_point_eng:
+            count += 5
+        if word_list[i] in eight_point_eng:
+            count += 8
+        if word_list[i] in ten_point_eng:
+            count += 10
+        i += 1
+    print(count)
 elif i in rus_dict:
-	for i in range(len(word_list)):
-		if word_list[i] in one_point_rus:
-			count+=1
-		if word_list[i] in two_point_rus:
-			count+=2
-		if word_list[i] in three_point_rus:
-			count+=3
-		if word_list[i] in four_point_rus:
-			count+=4
-		if word_list[i] in five_point_rus:
-			count+=5
-		if word_list[i] in eight_point_rus:
-			count+=8
-		if word_list[i] in ten_point_rus:
-			count+=10
-		i+=1
-	print(count)
+    for i in range(len(word_list)):
+        if word_list[i] in one_point_rus:
+            count += 1
+        if word_list[i] in two_point_rus:
+            count += 2
+        if word_list[i] in three_point_rus:
+            count += 3
+        if word_list[i] in four_point_rus:
+            count += 4
+        if word_list[i] in five_point_rus:
+            count += 5
+        if word_list[i] in eight_point_rus:
+            count += 8
+        if word_list[i] in ten_point_rus:
+            count += 10
+        i += 1
+    print(count)
 else:
-	print('Ошибка ввода ')
+    print('Ошибка ввода ')
