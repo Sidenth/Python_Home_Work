@@ -19,19 +19,18 @@
 # else:
 #     print("Ошибка ввода")
 
-s ={}
-for i in range(1,3):
-    s[i]='зима'
-for i in range(3,6):
-    s[i]='весна'
-for i in range(6,9):
-    s[i]='лето'
-for i in range(9,12):
-    s[i]='осень'
+s = {}
+for i in range(1, 3):
+    s[i] = 'зима'
+for i in range(3, 6):
+    s[i] = 'весна'
+for i in range(6, 9):
+    s[i] = 'лето'
+for i in range(9, 12):
+    s[i] = 'осень'
 s[12] = 'зима'
 season_number = int(input('Введите номер месяца: '))
-if season_number>0 and season_number<13:
+if season_number > 0 and season_number < 13:
     print(s[season_number])
 else:
     print('Ошибка')
-

@@ -11,22 +11,22 @@
 N = int(input("Введите количество элементов массива: "))
 X = int(input('Введите число X: '))
 current_list = []
-for i in range(1, N+1):
+for i in range(1, N + 1):
     current_list.append(i)
-    i+=1
+    i += 1
 print(current_list)
 count = 0
-min = X - current_list[0]
+min_diff = X - current_list[0]
 index = 0
 if X in current_list:
-    min = X
-elif X<0:
+    min_diff = X
+elif X < 0:
     print('Ошибка ввода ')
 else:
     for i in range(len(current_list)):
-        if X-current_list[i]<min:
-            min = X - current_list[i]
+        if X - current_list[i] < min_diff:
+            min_diff = X - current_list[i]
             index = i
-            i+=1
+            i += 1
     min = current_list[index]
-print(f"Ближайший по значению элемент - {min}")
+print(f"Ближайший по значению элемент - {min_diff}")

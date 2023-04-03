@@ -7,9 +7,13 @@
 # Пример:
 # Иван Иванов 1846 года рождения, проживает в городе Москва,
 # email: jackie@gmail.com, телефон: 01005321456
+def user_info(new_list):
+    info_list = ['имя', 'фамилию', 'год рождения', 'город проживания', 'email', 'телефон']
+    for i in range(6):
+        list_1.append(input(f'Введите {info_list[i]} '))
+        i += 1
+    print(*list_1)
+
+
 list_1 = []
-list_2 =['имя', 'фамилию', 'год рождения', 'город проживания', 'email', 'телефон']
-for i in range(6):
-    list_1.append(input(f'Введите {list_2[i]} '))
-    i+=1
-print(*list_1)
+user_info(list_1)
