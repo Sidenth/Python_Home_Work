@@ -12,6 +12,6 @@
 # # print(f'{hours}:{minutes}:{seconds}');
 # print(float("{0:.1f}".format(hours)));
 import datetime
-given_time = int(input("Введите время в секундах: "));
-formated_time = str(datetime.timedelta(seconds = given_time));
-print(formated_time);
+given_time = int(input("Введите время в секундах: "))
+formated_time = str(datetime.timedelta(seconds = given_time))
+print(formated_time)
