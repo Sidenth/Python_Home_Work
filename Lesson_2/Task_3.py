@@ -2,6 +2,6 @@
 # 2k), не превосходящие числа N.
 given_number = int(input("Введите число N: "))
 i = 1
-while 2**i <= given_number:
-    print(f"{2**i}")
-    i+=1
+while 2 ** i <= given_number:
+    print(f"{2 ** i}")
+    i += 1
